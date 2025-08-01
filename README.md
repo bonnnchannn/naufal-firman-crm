@@ -94,6 +94,63 @@ Silakan login menggunakan salah satu akun di atas untuk menguji alur kerja sesua
 
 ---
 
+## Diagram Database (ERD)
+
+```mermaid
+erDiagram
+    users {
+        int id PK
+        string name
+        string email
+        string password
+        string role "sales, manager"
+    }
+
+    products {
+        int id PK
+        string name
+        text description
+        decimal price
+    }
+
+    leads {
+        int id PK
+        string name
+        string email
+        string phone
+        string status
+    }
+
+    projects {
+        int id PK
+        int lead_id FK
+        int user_id FK "FK to users"
+        string status "pending_approval, approved, rejected"
+        text notes
+    }
+
+    customers {
+        int id PK
+        string name
+        string email
+        string phone
+        text address
+    }
+
+    subscriptions {
+        int id PK
+        int customer_id FK
+        int product_id FK
+        date start_date
+    }
+
+    users ||--o{ projects : "menangani"
+    leads ||--|{ projects : "menjadi"
+    customers ||--o{ subscriptions : "memiliki"
+    products ||--o{ subscriptions : "merupakan bagian dari"
+```
+
+
 ## 👤 Penulis
 
 - **Nama**: Naufal Firman Dhani
