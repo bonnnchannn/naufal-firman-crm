@@ -1,4 +1,3 @@
-````markdown
 # Smart CRM - Aplikasi Customer Relationship Management Sederhana
 
 Aplikasi web CRM sederhana yang dibangun untuk memenuhi tugas seleksi Fullstack Developer. Aplikasi ini bertujuan untuk mendigitalisasi proses kerja divisi sales di PT. Smart, sebuah perusahaan Internet Service Provider.
@@ -64,13 +63,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal.
     php artisan key:generate
     ```
 
-5.  **Jalankan Migrasi dan Seeder (jika ada)**
-    Perintah ini akan membuat semua tabel dan mengisi data awal (jika Anda membuat seeder untuk akun).
-    ```bash
-    php artisan migrate --seed
-    ```
-
-6.  **Jalankan Server**
+5.  **Jalankan Server**
     Jalankan server development Laravel dan proses build Vite secara bersamaan.
 
     * Di terminal pertama:
@@ -103,10 +96,10 @@ Silakan login menggunakan salah satu akun di atas untuk menguji alur kerja sesua
 
 ## 👤 Penulis
 
-- **Nama**: [Isi dengan nama lengkap Anda]
+- **Nama**: Naufal Firman Dhani
 
 ## ⏰ Waktu Pengerjaan
 
-- **Mulai**: [Isi dengan tanggal dan waktu mulai]
-- **Selesai**: [Isi dengan tanggal dan waktu selesai]
+- **Mulai**: 31-07-2025 pukul 14.00
+- **Selesai**: 01-08-2025 pukul 15.00
 ````
