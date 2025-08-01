@@ -17,12 +17,6 @@
                         </div>
                     @endif
 
-                    <div class="mb-4">
-                        <a href="{{ route('products.create') }}" class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded">
-                            + Tambah Produk
-                        </a>
-                    </div>
-
                     <table class="min-w-full divide-y divide-gray-200">
                         <thead class="bg-gray-50">
                             <tr>
@@ -61,6 +55,13 @@
                     {{-- 4. Link Paginasi --}}
                     <div class="mt-4">
                         {{ $products->links() }}
+                    </div>
+
+                    {{-- 5. Tombol Tambah Produk (dipindah ke bawah) --}}
+                    <div class="mt-4">
+                        <a href="{{ route('products.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            + Tambah Produk
+                        </a>
                     </div>
 
                 </div>
